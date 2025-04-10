@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PremiumShop - Your Trusted Online Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Derby's Honey</span>
+                </div>
+                <nav>
+                    <div class="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul id="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="#order">Order Now</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <video autoplay muted loop class="background-video">
+            <source src="Video/Vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <div class="container">
+                <h1>Natural Quality Honey Products Delivered to Your Doorstep</h1>
+                <p>Shop the latest trends and enjoy a seamless shopping experience with our secure payment options including MoMo mobile money.</p>
+                <a href="#order" class="btn btn-outline">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="product-section" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Featured Products</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Media/H1.jpeg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wireless Headphones</h3>
+                        <p>Premium noise-cancelling wireless headphones with 30hr battery life.</p>
+                        <span class="price">GHc100.99</span>
+                        <a href="#order" class="btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Media/H3.jpeg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Watch Pro</h3>
+                        <p>Track your fitness, receive notifications and more with our latest smart watch.</p>
+                        <span class="price">GHc50.00</span>
+                        <a href="#order" class="btn">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Media/H4.jpeg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Wireless Earbuds</h3>
+                        <p>Crystal clear sound with comfortable fit and 24hr battery life.</p>
+                        <span class="price">GHc30.99</span>
+                        <a href="#order" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section" id="order">
+        <div class="container">
+            <div class="section-title">
+                <h2>Place Your Order</h2>
+            </div>
+            <form id="orderForm" class="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" class="form-control" min="1" value="1" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="product">Select Product</label>
+                    <select id="product" class="form-control" required>
+                        <option value="">-- Select a honey product --</option>
+                        <option value="Wildflower Honey">Wildflower Honey - $12.99 (16oz)</option>
+                        <option value="Manuka Honey">Manuka Honey - $29.99 (8.8oz)</option>
+                        <option value="Clover Honey">Clover Honey - $9.99 (16oz)</option>
+                        <option value="Orange Blossom Honey">Orange Blossom Honey - $14.99 (12oz)</option>
+                        <option value="Buckwheat Honey">Buckwheat Honey - $16.99 (12oz)</option>
+                        <option value="Lavender Honey">Lavender Honey - $18.99 (8oz)</option>
+                        <option value="Acacia Honey">Acacia Honey - $22.99 (12oz)</option>
+                        <option value="Eucalyptus Honey">Eucalyptus Honey - $15.99 (12oz)</option>
+                        <option value="Honey Sampler Pack">Honey Sampler Pack - $24.99 (16oz total)</option>
+                        <option value="Comb Honey">Comb Honey - $19.99 (8oz)</option>
+                    </select>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <input type="radio" id="momo" name="payment" value="MoMo" checked>
+                            <label for="momo">
+                                <i class="fas fa-mobile-alt"></i>
+                                MoMo Pay
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="card" name="payment" value="Credit Card">
+                            <label for="card">
+                                <i class="far fa-credit-card"></i>
+                                Credit Card
+                            </label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="cash" name="payment" value="Cash on Delivery">
+                            <label for="cash">
+                                <i class="fas fa-money-bill-wave"></i>
+                                Cash on Delivery
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="location">Delivery Location</label>
+                    <textarea id="location" class="form-control" rows="3" required placeholder="Enter your full address including landmarks"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Additional Notes (Optional)</label>
+                    <textarea id="notes" class="form-control" rows="2" placeholder="Any special instructions for delivery"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Complete Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+<div class="chatbot-widget">
+    <div class="chatbot-header">
+        <span>Derby's Honey Assistant</span>
+        <button class="chatbot-close">&times;</button>
+    </div>
+    <div class="chatbot-messages">
+        <div class="chatbot-message bot">
+            Hi there! How can I help you today?
+        </div>
+    </div>
+    <div class="chatbot-input">
+        <input type="text" placeholder="Type your message...">
+        <button class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+<button class="chatbot-toggle">
+    <i class="fas fa-comment-dots"></i>
+</button>
+
+<!-- Shopping Cart Sidebar -->
+<div class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close">&times;</button>
+    </div>
+    <div class="cart-items">
+        <!-- Cart items will be added here dynamically -->
+    </div>
+    <div class="cart-total">
+        <span>Total: GH₵<span id="cart-total-amount">0.00</span></span>
+    </div>
+    <button class="btn checkout-btn">Proceed to Checkout</button>
+</div>
+<div class="cart-toggle">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+</div>
+<section class="reviews-section" id="reviews">
+    <div class="container">
+        <div class="section-title">
+            <h2>What Our Customers Say</h2>
+            <p>Real experiences from our honey lovers</p>
+        </div>
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ama Mensah">
+                    </div>
+                    <div class="review-author">
+                        <h4>Ama Mensah</h4>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <small>Verified Buyer | Accra</small>
+                    </div>
+                </div>
+                <p class="review-text">"Derby's Wildflower Honey has transformed my morning tea! The rich, floral taste is unmatched. Delivery was quicker than expected and the packaging was eco-friendly. Will definitely order again!"</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Kwame Osei">
+                    </div>
+                    <div class="review-author">
+                        <h4>Kwame Osei</h4>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <small>Verified Buyer | Kumasi</small>
+                    </div>
+                </div>
+                <p class="review-text">"The Manuka Honey is worth every cedi! My seasonal allergies have improved significantly since I started taking a spoonful daily. The MoMo payment made checkout so convenient!"</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Esi Boateng">
+                    </div>
+                    <div class="review-author">
+                        <h4>Esi Boateng</h4>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <small>Verified Buyer | Takoradi</small>
+                    </div>
+                </div>
+                <p class="review-text">"The Honey Sampler Pack was the perfect gift for my family. Everyone loved trying the different varieties. The Orange Blossom was my favorite - so fragrant and delicious!"</p>
+            </div>
+        </div>
+        
+        <!-- Review Form -->
+        <div class="review-form">
+            <h3>Share Your Experience</h3>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="reviewName">Your Name</label>
+                    <input type="text" id="reviewName" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewRating">Rating</label>
+                    <div class="star-rating">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reviewText">Your Review</label>
+                    <textarea id="reviewText" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PremiumShop</h3>
+                    <p>Your trusted online store for premium quality products with convenient payment options including MoMo mobile money.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#order">Order Now</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, City Mall Accra</li>
+                        <li><i class="fas fa-phone"></i> +233 55 603 6861</li>
+                        <li><i class="fas fa-envelope"></i> pauldeborah343@gmail.com </li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Derby's Honey. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="id.js"></script>
+</body>
+</html>

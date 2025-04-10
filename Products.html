@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PremiumShop - Your Trusted Online Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Derby's Honey</span>
+            </div>
+            <nav>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Add this cart icon -->
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+</header>
+    <style>
+        /* Products Page Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f7e8;
+            color: #333;
+        }
+        
+        .products-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #e67e22;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            border: 1px solid #f1c40f;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #d35400;
+        }
+
+        .product-price {
+            font-size: 1.25rem;
+            color: #27ae60;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #d35400;
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="products-container">
+        <h1>Our Premium Honey Collection</h1>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-badge">Best Seller</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Wildflower Honey">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Wildflower Honey</h3>
+                    <p class="product-description">Pure, raw honey collected from wildflowers. Rich in flavor with a smooth texture.</p>
+                    <div class="product-price">$12.99 (16oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-badge">New</div>
+                <div class="product-image">
+                    <img src="Media/OIP (6).jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Manuka Honey</h3>
+                    <p class="product-description">Premium medicinal honey from New Zealand with UMF 10+ rating.</p>
+                    <div class="product-price">$29.99 (8.8oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Media/th.jpg" alt="Clover Honey">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Clover Honey</h3>
+                    <p class="product-description">Light and sweet honey with a mild floral taste. Perfect for everyday use.</p>
+                    <div class="product-price">$9.99 (16oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Media/th (1).jpg" alt="Orange Blossom Honey">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Orange Blossom Honey</h3>
+                    <p class="product-description">Citrus-infused honey with a delicate orange aroma and flavor.</p>
+                    <div class="product-price">$14.99 (12oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-badge">Organic</div>
+                <div class="product-image">
+                    <img src="Media/OIP.jpg" alt="Buckwheat Honey">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Buckwheat Honey</h3>
+                    <p class="product-description">Dark, robust honey with strong antioxidant properties.</p>
+                    <div class="product-price">$16.99 (12oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Media/OIP (5).jpg" alt="Lavender Honey">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Lavender Honey</h3>
+                    <p class="product-description">Floral honey with calming lavender notes. Great for tea.</p>
+                    <div class="product-price">$18.99 (8oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-badge">Limited</div>
+                <div class="product-image">
+                    <img src="Media/OIP (4).jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Acacia Honey</h3>
+                    <p class="product-description">Light-colored honey with a mild, delicate taste that stays liquid longer.</p>
+                    <div class="product-price">$22.99 (12oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Media/OIP (3).jpg" alt="Eucalyptus Honey">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Eucalyptus Honey</h3>
+                    <p class="product-description">Distinctive herbal honey with potential respiratory benefits.</p>
+                    <div class="product-price">$15.99 (12oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+                <div class="product-badge">Gift Set</div>
+                <div class="product-image">
+                    <img src="Media/OIP (1).jpg" alt="Honey Sampler Pack">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Honey Sampler Pack</h3>
+                    <p class="product-description">Four 4oz jars of our most popular honey varieties.</p>
+                    <div class="product-price">$24.99 (16oz total)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="Media/OIP (2).jpg" alt="Comb Honey">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Comb Honey</h3>
+                    <p class="product-description">Pure honeycomb sections - the most natural form of honey.</p>
+                    <div class="product-price">$19.99 (8oz)</div>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add to Cart functionality
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const product = this.closest('.product-card');
+                const productName = product.querySelector('.product-title').textContent;
+                const productPrice = product.querySelector('.product-price').textContent;
+                
+                // Visual feedback
+                this.textContent = 'Added!';
+                this.style.backgroundColor = '#27ae60';
+                
+                setTimeout(() => {
+                    this.textContent = 'Add to Cart';
+                    this.style.backgroundColor = '#e67e22';
+                }, 2000);
+                
+                // Here you would typically add to cart logic
+                console.log(`Added to cart: ${productName} - ${productPrice}`);
+            });
+        });
+    </script>
+    <script src="id.js"></script>
+</body>
+</html>
